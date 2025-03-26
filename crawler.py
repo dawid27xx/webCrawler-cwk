@@ -7,30 +7,23 @@ import sys
 import os
 
 BASE_URL = "https://quotes.toscrape.com"
-INDEX_FILE = "index.json"
+INDEX_FILE = "../index.json"
 
-# Function: Fetch HTML from a URL
+
 def fetch_page(url):
     response = requests.get(url)
     return response.text
-
-# Function: Parse HTML content and extract words to update index
-def parse_quotes(html, url, index):
-    """
-    Parses HTML content, extracts quotes, splits into words,
-    updates the inverted index with word frequencies per page.
-    """
-    pass  # Implement BeautifulSoup parsing and index updating
 
 def build_index():
     index = {}
     queue = deque(['/'])
     visited_urls = set()
+    
     # scrapeCounter = 0
-
     # while queue and scrapeCounter < 20:
+    #   scrapeCounter += 1
+
     while queue:
-        # scrapeCounter += 1
         page_path = queue.popleft()
         if page_path in visited_urls:
             continue
@@ -47,10 +40,10 @@ def build_index():
 
         for word, count in word_counts.items():
             if word not in index:
-                index[word] = {}
-            if full_url not in index[word]:
-                index[word][full_url] = 0
-            index[word][full_url] += count
+                index[word] = {full_url: count}
+            else:
+                index[word][full_url] = count
+
 
         visited_urls.add(page_path)
 
@@ -60,44 +53,89 @@ def build_index():
                 queue.append(href)
 
         # time.sleep(6)
-    # print(index)
+
     with open(INDEX_FILE, 'w') as f:
         json.dump(index, f, indent=2)
 
-    print("Index successfully built and saved to", INDEX_FILE)
 
-# Function: Load the existing inverted index from a JSON file
 def load_index():
-    """
-    Checks if an index file exists, and loads the inverted index into memory.
-    """
-    pass  # Implement JSON loading
+    if not os.path.exists(INDEX_FILE):
+        print("Index file not found. Please run the 'build' command first.")
+        return None
 
-# Function: Print the inverted index entry for a specific word
+    with open(INDEX_FILE, 'r') as f:
+        return json.load(f)
+
+
 def print_index(word, index):
-    """
-    Given a word, prints all pages it appears in and the frequency per page.
-    """
-    pass  # Implement word lookup and printing logic
+    word = word.lower()
+    if word in index:
+        print(f"Inverted index for '{word}':")
+        for page, freq in index[word].items():
+            print(f"  {page}: {freq}")
+    else:
+        print(f"No entry found for '{word}'.")
 
-# Function: Find pages containing single or multiple words
+
 def find_words(query, index):
-    """
-    Finds all pages containing all words in the query and prints them.
-    """
-    pass  # Implement multi-word intersection logic
+    words = query.lower().split()
+    page_scores = {}
 
-# Main CLI function to handle commands
+    for word in words:
+        if word in index:
+            for page, freq in index[word].items():
+                if page not in page_scores:
+                    page_scores[page] = {'match_count': 0, 'total_freq': 0}
+                page_scores[page]['match_count'] += 1
+                page_scores[page]['total_freq'] += freq
+
+    sorted_pages = sorted(
+        page_scores.items(),
+        key=lambda item: (item[1]['match_count'], item[1]['total_freq']),
+        reverse=True
+    )
+
+    for page, _ in sorted_pages:
+        print(page)
+
 def main():
-    build_index()
-    """
-    Parses command-line arguments to execute one of:
-    - build
-    - load
-    - print [word]
-    - find [word or phrase]
-    """
-    pass  # Implement argument parsing and function calling
+    index = None
+
+    while True:
+        user_input = input("Enter command (build, load, print [word], find [phrase], exit): ").strip()
+        if not user_input:
+            continue
+
+        parts = user_input.split()
+        command = parts[0].lower()
+
+        if command == "exit":
+            break
+        elif command == "build":
+            build_index()
+            index = load_index()
+        elif command == "load":
+            index = load_index()
+        elif command == "print":
+            if len(parts) != 2:
+                print("Usage: print [word]")
+                continue
+            if index is None:
+                print("Please load or build the index first.")
+                continue
+            print_index(parts[1], index)
+        elif command == "find":
+            if len(parts) < 2:
+                print("Usage: find [word or phrase]")
+                continue
+            if index is None:
+                print("Please load or build the index first.")
+                continue
+            find_words(' '.join(parts[1:]), index)
+        else:
+            print("Unknown command.")
+
+
 
 if __name__ == "__main__":
     main()
