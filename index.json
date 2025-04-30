@@ -3,7 +3,7 @@
     "https://quotes.toscrape.com/": [
       0,
       3,
-      274
+      273
     ],
     "https://quotes.toscrape.com/login": [
       0,
@@ -53,12 +53,12 @@
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
       0,
       3,
-      483
+      482
     ],
     "https://quotes.toscrape.com/tag/life/page/1/": [
       0,
       3,
-      497
+      496
     ],
     "https://quotes.toscrape.com/tag/live/page/1/": [
       0,
@@ -88,12 +88,17 @@
     "https://quotes.toscrape.com/tag/books/page/1/": [
       0,
       3,
-      329
+      328
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       0,
       3,
       68
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      0,
+      3,
+      285
     ]
   },
   "to": {
@@ -178,6 +183,7 @@
       185,
       199,
       286,
+      350,
       373,
       401
     ],
@@ -236,6 +242,15 @@
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       1,
       4
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      1,
+      4,
+      101,
+      103,
+      151,
+      202,
+      248
     ]
   },
   "scrape": {
@@ -314,6 +329,10 @@
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       2,
       5
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      2,
+      5
     ]
   },
   "login": {
@@ -373,12 +392,69 @@
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       6
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      6
     ]
   },
-  "\u201cthe": {
+  "the": {
     "https://quotes.toscrape.com/": [
       7,
+      77,
       96
+    ],
+    "https://quotes.toscrape.com/author/Albert-Einstein": [
+      31,
+      41,
+      44,
+      50,
+      67,
+      70,
+      73,
+      106,
+      116,
+      119,
+      132,
+      140,
+      145,
+      163,
+      170,
+      191,
+      193,
+      196,
+      223,
+      234,
+      256,
+      265,
+      272,
+      298,
+      331,
+      338,
+      356,
+      359,
+      362,
+      380,
+      386,
+      389,
+      395,
+      407,
+      432,
+      458,
+      465,
+      472,
+      475,
+      482,
+      501,
+      519,
+      533,
+      545,
+      551,
+      557,
+      561,
+      575,
+      580,
+      589,
+      610
     ],
     "https://quotes.toscrape.com/tag/change/page/1/": [
       10
@@ -393,17 +469,109 @@
     "https://quotes.toscrape.com/tag/world/page/1/": [
       10
     ],
+    "https://quotes.toscrape.com/author/J-K-Rowling": [
+      18,
+      29,
+      53,
+      93,
+      136,
+      145,
+      152,
+      246,
+      258,
+      267,
+      272,
+      289,
+      293,
+      330,
+      333,
+      380,
+      386,
+      407,
+      423,
+      433,
+      503,
+      563,
+      634,
+      646
+    ],
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
-      300
+      27,
+      112,
+      144,
+      166,
+      170,
+      300,
+      309,
+      318,
+      328,
+      351,
+      357,
+      415,
+      420,
+      446,
+      454
+    ],
+    "https://quotes.toscrape.com/tag/life/page/1/": [
+      27,
+      93,
+      125,
+      147,
+      151,
+      320
+    ],
+    "https://quotes.toscrape.com/tag/live/page/1/": [
+      27
+    ],
+    "https://quotes.toscrape.com/tag/miracle/page/1/": [
+      27
+    ],
+    "https://quotes.toscrape.com/tag/miracles/page/1/": [
+      27
+    ],
+    "https://quotes.toscrape.com/author/Jane-Austen": [
+      17,
+      34,
+      44,
+      78,
+      82,
+      103,
+      143,
+      168,
+      222,
+      227,
+      231,
+      238,
+      249,
+      279,
+      299,
+      313,
+      317,
+      327
     ],
     "https://quotes.toscrape.com/tag/aliteracy/page/1/": [
       10
     ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
-      10
+      10,
+      48,
+      112,
+      169,
+      187,
+      279,
+      288
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       10
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      10,
+      89,
+      92,
+      183,
+      227,
+      244,
+      253
     ]
   },
   "world": {
@@ -599,7 +767,9 @@
     "https://quotes.toscrape.com/": [
       13,
       20,
+      37,
       99,
+      169,
       229
     ],
     "https://quotes.toscrape.com/tag/change/page/1/": [
@@ -612,7 +782,8 @@
     ],
     "https://quotes.toscrape.com/tag/thinking/page/1/": [
       16,
-      23
+      23,
+      63
     ],
     "https://quotes.toscrape.com/tag/world/page/1/": [
       16,
@@ -621,13 +792,21 @@
     "https://quotes.toscrape.com/author/J-K-Rowling": [
       384
     ],
+    "https://quotes.toscrape.com/tag/abilities/page/1/": [
+      10
+    ],
+    "https://quotes.toscrape.com/tag/choices/page/1/": [
+      10
+    ],
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
       97,
       125,
       135,
-      187
+      187,
+      368
     ],
     "https://quotes.toscrape.com/tag/life/page/1/": [
+      46,
       78,
       106,
       116,
@@ -647,6 +826,12 @@
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       13
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      13,
+      95,
+      158,
+      206
     ]
   },
   "is": {
@@ -750,6 +935,13 @@
       136,
       157,
       231
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      42,
+      87,
+      122,
+      192,
+      250
     ]
   },
   "a": {
@@ -761,7 +953,9 @@
       151,
       157,
       209,
-      221
+      217,
+      221,
+      242
     ],
     "https://quotes.toscrape.com/author/Albert-Einstein": [
       83,
@@ -879,6 +1073,16 @@
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       22,
       39
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      22,
+      38,
+      64,
+      72,
+      77,
+      105,
+      110,
+      125
     ]
   },
   "process": {
@@ -1017,6 +1221,10 @@
       241,
       245,
       253
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      91,
+      190
     ]
   },
   "our": {
@@ -1054,25 +1262,36 @@
   "thinking": {
     "https://quotes.toscrape.com/": [
       19,
+      27,
       35
     ],
     "https://quotes.toscrape.com/tag/change/page/1/": [
       22,
+      30,
       38
     ],
     "https://quotes.toscrape.com/tag/deep-thoughts/page/1/": [
       22,
+      30,
       38
     ],
     "https://quotes.toscrape.com/tag/thinking/page/1/": [
       9,
       22,
+      30,
       38,
       71
     ],
     "https://quotes.toscrape.com/tag/world/page/1/": [
       22,
+      30,
       38
+    ],
+    "https://quotes.toscrape.com/tag/books/page/1/": [
+      127
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      214
     ]
   },
   "cannot": {
@@ -1126,6 +1345,7 @@
       50,
       58,
       110,
+      302,
       426,
       468
     ],
@@ -1144,6 +1364,11 @@
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       12,
       26
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      12,
+      26,
+      97
     ]
   },
   "changed": {
@@ -1182,6 +1407,9 @@
     ],
     "https://quotes.toscrape.com/tag/world/page/1/": [
       27
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      40
     ]
   },
   "changing": {
@@ -1201,26 +1429,6 @@
       28
     ]
   },
-  "thinking\u201d": {
-    "https://quotes.toscrape.com/": [
-      27
-    ],
-    "https://quotes.toscrape.com/tag/change/page/1/": [
-      30
-    ],
-    "https://quotes.toscrape.com/tag/deep-thoughts/page/1/": [
-      30
-    ],
-    "https://quotes.toscrape.com/tag/thinking/page/1/": [
-      30
-    ],
-    "https://quotes.toscrape.com/tag/world/page/1/": [
-      30
-    ],
-    "https://quotes.toscrape.com/tag/books/page/1/": [
-      127
-    ]
-  },
   "by": {
     "https://quotes.toscrape.com/": [
       28,
@@ -1233,40 +1441,40 @@
       207,
       236,
       251,
-      275,
-      280
+      274,
+      278
     ],
     "https://quotes.toscrape.com/login": [
       10,
-      15
+      14
     ],
     "https://quotes.toscrape.com/author/Albert-Einstein": [
       35,
       222,
       310,
       618,
-      623
+      622
     ],
     "https://quotes.toscrape.com/tag/change/page/1/": [
       31,
       54,
-      59
+      58
     ],
     "https://quotes.toscrape.com/tag/deep-thoughts/page/1/": [
       31,
       54,
-      59
+      58
     ],
     "https://quotes.toscrape.com/tag/thinking/page/1/": [
       31,
       64,
       86,
-      91
+      90
     ],
     "https://quotes.toscrape.com/tag/world/page/1/": [
       31,
       54,
-      59
+      58
     ],
     "https://quotes.toscrape.com/author/J-K-Rowling": [
       67,
@@ -1274,17 +1482,17 @@
       379,
       412,
       652,
-      657
+      656
     ],
     "https://quotes.toscrape.com/tag/abilities/page/1/": [
       26,
       47,
-      52
+      51
     ],
     "https://quotes.toscrape.com/tag/choices/page/1/": [
       26,
       47,
-      52
+      51
     ],
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
       36,
@@ -1297,8 +1505,8 @@
       404,
       422,
       462,
-      484,
-      489
+      483,
+      487
     ],
     "https://quotes.toscrape.com/tag/life/page/1/": [
       36,
@@ -1311,34 +1519,34 @@
       396,
       413,
       474,
-      498,
-      503
+      497,
+      501
     ],
     "https://quotes.toscrape.com/tag/live/page/1/": [
       36,
       60,
-      65
+      64
     ],
     "https://quotes.toscrape.com/tag/miracle/page/1/": [
       36,
       60,
-      65
+      64
     ],
     "https://quotes.toscrape.com/tag/miracles/page/1/": [
       36,
       60,
-      65
+      64
     ],
     "https://quotes.toscrape.com/author/Jane-Austen": [
       90,
       298,
       335,
-      340
+      339
     ],
     "https://quotes.toscrape.com/tag/aliteracy/page/1/": [
       29,
       52,
-      57
+      56
     ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
       29,
@@ -1351,14 +1559,28 @@
       218,
       267,
       302,
-      330,
-      335
+      329,
+      333
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       29,
       47,
       69,
-      74
+      73
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      29,
+      47,
+      79,
+      113,
+      133,
+      159,
+      177,
+      207,
+      237,
+      260,
+      286,
+      290
     ]
   },
   "albert": {
@@ -1485,6 +1707,7 @@
       39,
       65,
       85,
+      288,
       292,
       340,
       364,
@@ -1496,6 +1719,7 @@
     "https://quotes.toscrape.com/tag/life/page/1/": [
       39,
       68,
+      269,
       273,
       306,
       326,
@@ -1537,6 +1761,18 @@
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       32,
       50
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      32,
+      50,
+      82,
+      116,
+      137,
+      162,
+      180,
+      210,
+      240,
+      263
     ]
   },
   "tags": {
@@ -1551,7 +1787,7 @@
       212,
       240,
       255,
-      263
+      262
     ],
     "https://quotes.toscrape.com/tag/change/page/1/": [
       35,
@@ -1589,7 +1825,7 @@
       408,
       428,
       466,
-      472
+      471
     ],
     "https://quotes.toscrape.com/tag/life/page/1/": [
       40,
@@ -1602,7 +1838,7 @@
       400,
       418,
       479,
-      486
+      485
     ],
     "https://quotes.toscrape.com/tag/live/page/1/": [
       40,
@@ -1631,12 +1867,25 @@
       222,
       271,
       306,
-      318
+      317
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       33,
       51,
       57
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      33,
+      51,
+      83,
+      117,
+      138,
+      163,
+      181,
+      211,
+      241,
+      264,
+      274
     ]
   },
   "change": {
@@ -1676,24 +1925,6 @@
     ],
     "https://quotes.toscrape.com/tag/world/page/1/": [
       37
-    ]
-  },
-  "\u201cit": {
-    "https://quotes.toscrape.com/": [
-      37,
-      169
-    ],
-    "https://quotes.toscrape.com/tag/abilities/page/1/": [
-      10
-    ],
-    "https://quotes.toscrape.com/tag/choices/page/1/": [
-      10
-    ],
-    "https://quotes.toscrape.com/tag/inspirational/page/1/": [
-      368
-    ],
-    "https://quotes.toscrape.com/tag/life/page/1/": [
-      46
     ]
   },
   "choices": {
@@ -1775,6 +2006,10 @@
       171,
       194,
       281
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      69,
+      193
     ]
   },
   "show": {
@@ -1817,7 +2052,11 @@
       433
     ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
-      123
+      123,
+      152
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      170
     ]
   },
   "truly": {
@@ -1829,6 +2068,9 @@
     ],
     "https://quotes.toscrape.com/tag/choices/page/1/": [
       19
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      171
     ]
   },
   "are": {
@@ -1933,15 +2175,19 @@
       244
     ]
   },
-  "abilities\u201d": {
+  "abilities": {
     "https://quotes.toscrape.com/": [
-      52
+      52,
+      58
     ],
     "https://quotes.toscrape.com/tag/abilities/page/1/": [
-      25
+      9,
+      25,
+      31
     ],
     "https://quotes.toscrape.com/tag/choices/page/1/": [
-      25
+      25,
+      31
     ]
   },
   "jk": {
@@ -1994,19 +2240,7 @@
       363
     ]
   },
-  "abilities": {
-    "https://quotes.toscrape.com/": [
-      58
-    ],
-    "https://quotes.toscrape.com/tag/abilities/page/1/": [
-      9,
-      31
-    ],
-    "https://quotes.toscrape.com/tag/choices/page/1/": [
-      31
-    ]
-  },
-  "\u201cthere": {
+  "there": {
     "https://quotes.toscrape.com/": [
       60
     ],
@@ -2014,7 +2248,8 @@
       10
     ],
     "https://quotes.toscrape.com/tag/life/page/1/": [
-      10
+      10,
+      364
     ],
     "https://quotes.toscrape.com/tag/live/page/1/": [
       10
@@ -2026,7 +2261,8 @@
       10
     ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
-      135
+      135,
+      230
     ]
   },
   "only": {
@@ -2034,7 +2270,8 @@
       62
     ],
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
-      12
+      12,
+      413
     ],
     "https://quotes.toscrape.com/tag/life/page/1/": [
       12
@@ -2054,6 +2291,10 @@
     "https://quotes.toscrape.com/tag/books/page/1/": [
       110,
       121
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      234,
+      254
     ]
   },
   "two": {
@@ -2170,7 +2411,7 @@
       68,
       92,
       193,
-      266
+      265
     ],
     "https://quotes.toscrape.com/author/Albert-Einstein": [
       238
@@ -2202,7 +2443,7 @@
       92,
       297,
       331,
-      475
+      474
     ],
     "https://quotes.toscrape.com/tag/life/page/1/": [
       9,
@@ -2212,14 +2453,18 @@
       73,
       278,
       308,
+      322,
       332,
+      333,
       351,
       380,
+      382,
       401,
+      403,
       408,
       420,
       480,
-      489
+      488
     ],
     "https://quotes.toscrape.com/tag/live/page/1/": [
       18,
@@ -2243,11 +2488,15 @@
       43
     ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
+      50,
       60,
-      321
+      320
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       60
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      277
     ]
   },
   "one": {
@@ -2282,6 +2531,9 @@
     ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
       239
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      255
     ]
   },
   "though": {
@@ -2311,6 +2563,9 @@
     ],
     "https://quotes.toscrape.com/author/Jane-Austen": [
       245
+    ],
+    "https://quotes.toscrape.com/tag/books/page/1/": [
+      198
     ]
   },
   "nothing": {
@@ -2339,173 +2594,34 @@
   "miracle": {
     "https://quotes.toscrape.com/": [
       76,
+      85,
       94
     ],
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
       26,
+      35,
       44
     ],
     "https://quotes.toscrape.com/tag/life/page/1/": [
       26,
+      35,
       44
     ],
     "https://quotes.toscrape.com/tag/live/page/1/": [
       26,
+      35,
       44
     ],
     "https://quotes.toscrape.com/tag/miracle/page/1/": [
       9,
       26,
+      35,
       44
     ],
     "https://quotes.toscrape.com/tag/miracles/page/1/": [
       26,
+      35,
       44
-    ]
-  },
-  "the": {
-    "https://quotes.toscrape.com/": [
-      77
-    ],
-    "https://quotes.toscrape.com/author/Albert-Einstein": [
-      31,
-      41,
-      44,
-      50,
-      67,
-      70,
-      73,
-      106,
-      116,
-      119,
-      132,
-      140,
-      145,
-      163,
-      170,
-      191,
-      193,
-      196,
-      223,
-      234,
-      256,
-      265,
-      272,
-      298,
-      331,
-      338,
-      356,
-      359,
-      362,
-      380,
-      386,
-      389,
-      395,
-      407,
-      432,
-      458,
-      465,
-      472,
-      475,
-      482,
-      501,
-      519,
-      533,
-      545,
-      551,
-      557,
-      561,
-      575,
-      580,
-      589,
-      610
-    ],
-    "https://quotes.toscrape.com/author/J-K-Rowling": [
-      18,
-      29,
-      53,
-      93,
-      136,
-      145,
-      152,
-      246,
-      258,
-      267,
-      272,
-      289,
-      293,
-      330,
-      333,
-      380,
-      386,
-      407,
-      423,
-      433,
-      503,
-      563,
-      634,
-      646
-    ],
-    "https://quotes.toscrape.com/tag/inspirational/page/1/": [
-      27,
-      112,
-      144,
-      166,
-      170,
-      309,
-      318,
-      328,
-      351,
-      357,
-      415,
-      420,
-      446,
-      454
-    ],
-    "https://quotes.toscrape.com/tag/life/page/1/": [
-      27,
-      93,
-      125,
-      147,
-      151,
-      320
-    ],
-    "https://quotes.toscrape.com/tag/live/page/1/": [
-      27
-    ],
-    "https://quotes.toscrape.com/tag/miracle/page/1/": [
-      27
-    ],
-    "https://quotes.toscrape.com/tag/miracles/page/1/": [
-      27
-    ],
-    "https://quotes.toscrape.com/author/Jane-Austen": [
-      17,
-      34,
-      44,
-      78,
-      82,
-      103,
-      143,
-      168,
-      222,
-      227,
-      231,
-      238,
-      249,
-      279,
-      299,
-      313,
-      317,
-      327
-    ],
-    "https://quotes.toscrape.com/tag/books/page/1/": [
-      48,
-      112,
-      169,
-      187,
-      279,
-      288
     ]
   },
   "other": {
@@ -2555,32 +2671,12 @@
       32
     ]
   },
-  "miracle\u201d": {
-    "https://quotes.toscrape.com/": [
-      85
-    ],
-    "https://quotes.toscrape.com/tag/inspirational/page/1/": [
-      35
-    ],
-    "https://quotes.toscrape.com/tag/life/page/1/": [
-      35
-    ],
-    "https://quotes.toscrape.com/tag/live/page/1/": [
-      35
-    ],
-    "https://quotes.toscrape.com/tag/miracle/page/1/": [
-      35
-    ],
-    "https://quotes.toscrape.com/tag/miracles/page/1/": [
-      35
-    ]
-  },
   "inspirational": {
     "https://quotes.toscrape.com/": [
       91,
       146,
       215,
-      265
+      264
     ],
     "https://quotes.toscrape.com/tag/change/page/1/": [
       44
@@ -2612,13 +2708,13 @@
       410,
       430,
       467,
-      474
+      473
     ],
     "https://quotes.toscrape.com/tag/life/page/1/": [
       41,
       277,
       419,
-      488
+      487
     ],
     "https://quotes.toscrape.com/tag/live/page/1/": [
       41,
@@ -2637,10 +2733,13 @@
     ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
       105,
-      320
+      319
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       59
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      276
     ]
   },
   "miracles": {
@@ -2676,6 +2775,9 @@
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       11
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      11
     ]
   },
   "gentleman": {
@@ -2689,6 +2791,9 @@
       14
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
+      14
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
       14
     ]
   },
@@ -2711,6 +2816,10 @@
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       15
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      15,
+      107
     ]
   },
   "lady": {
@@ -2724,6 +2833,9 @@
       16
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
+      16
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
       16
     ]
   },
@@ -2753,6 +2865,10 @@
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       17
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      17,
+      56
     ]
   },
   "has": {
@@ -2779,12 +2895,16 @@
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       18
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      18
     ]
   },
   "not": {
     "https://quotes.toscrape.com/": [
       105,
       148,
+      187,
       197
     ],
     "https://quotes.toscrape.com/author/Albert-Einstein": [
@@ -2804,6 +2924,7 @@
       452
     ],
     "https://quotes.toscrape.com/tag/life/page/1/": [
+      64,
       283
     ],
     "https://quotes.toscrape.com/tag/aliteracy/page/1/": [
@@ -2814,6 +2935,9 @@
       263
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
+      19
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
       19
     ]
   },
@@ -2828,6 +2952,9 @@
       20
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
+      20
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
       20
     ]
   },
@@ -2899,6 +3026,14 @@
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       21
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      21,
+      59,
+      71,
+      88,
+      145,
+      205
     ]
   },
   "good": {
@@ -2917,6 +3052,7 @@
     ],
     "https://quotes.toscrape.com/tag/life/page/1/": [
       94,
+      310,
       312
     ],
     "https://quotes.toscrape.com/tag/aliteracy/page/1/": [
@@ -2924,9 +3060,13 @@
     ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
       23,
+      38,
       40
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
+      23
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
       23
     ]
   },
@@ -2944,6 +3084,9 @@
       24
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
+      24
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
       24
     ]
   },
@@ -2965,6 +3108,11 @@
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       25
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      25,
+      66,
+      175
     ]
   },
   "intolerably": {
@@ -2979,9 +3127,12 @@
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       27
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      27
     ]
   },
-  "stupid\u201d": {
+  "stupid": {
     "https://quotes.toscrape.com/": [
       114
     ],
@@ -2993,6 +3144,10 @@
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       28
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      28,
+      106
     ]
   },
   "jane": {
@@ -3012,6 +3167,9 @@
       268
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
+      30
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
       30
     ]
   },
@@ -3034,6 +3192,9 @@
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       31
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      31
     ]
   },
   "aliteracy": {
@@ -3049,12 +3210,15 @@
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       34
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      34
     ]
   },
   "books": {
     "https://quotes.toscrape.com/": [
       121,
-      268
+      267
     ],
     "https://quotes.toscrape.com/tag/change/page/1/": [
       47
@@ -3079,12 +3243,12 @@
     ],
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
       409,
-      477
+      476
     ],
     "https://quotes.toscrape.com/tag/life/page/1/": [
       313,
       328,
-      491
+      490
     ],
     "https://quotes.toscrape.com/tag/live/page/1/": [
       53
@@ -3113,12 +3277,16 @@
       223,
       272,
       307,
-      323
+      322
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       35,
       52,
       62
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      35,
+      279
     ]
   },
   "classic": {
@@ -3130,19 +3298,24 @@
     ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
       36,
+      209,
       224
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       9,
       36,
+      38,
       53
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      36
     ]
   },
   "humor": {
     "https://quotes.toscrape.com/": [
       123,
       256,
-      267
+      266
     ],
     "https://quotes.toscrape.com/tag/change/page/1/": [
       46
@@ -3164,10 +3337,10 @@
       39
     ],
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
-      476
+      475
     ],
     "https://quotes.toscrape.com/tag/life/page/1/": [
-      490
+      489
     ],
     "https://quotes.toscrape.com/tag/live/page/1/": [
       52
@@ -3184,14 +3357,28 @@
     ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
       37,
-      322
+      321
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       37,
       61
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      9,
+      37,
+      52,
+      84,
+      118,
+      141,
+      164,
+      182,
+      212,
+      242,
+      265,
+      278
     ]
   },
-  "\u201cimperfection": {
+  "imperfection": {
     "https://quotes.toscrape.com/": [
       124
     ],
@@ -3205,6 +3392,9 @@
     ],
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
       48
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      86
     ]
   },
   "madness": {
@@ -3307,12 +3497,23 @@
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       44
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      94,
+      129,
+      200,
+      217,
+      220,
+      223
     ]
   },
   "its": {
     "https://quotes.toscrape.com/": [
       131,
       232
+    ],
+    "https://quotes.toscrape.com/author/J-K-Rowling": [
+      512
     ],
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
       53,
@@ -3324,6 +3525,9 @@
     ],
     "https://quotes.toscrape.com/tag/life/page/1/": [
       88
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      148
     ]
   },
   "better": {
@@ -3356,7 +3560,7 @@
       58
     ]
   },
-  "boring\u201d": {
+  "boring": {
     "https://quotes.toscrape.com/": [
       139
     ],
@@ -3396,9 +3600,12 @@
       67
     ]
   },
-  "\u201ctry": {
+  "try": {
     "https://quotes.toscrape.com/": [
       147
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      236
     ]
   },
   "become": {
@@ -3436,19 +3643,15 @@
       78
     ]
   },
-  "value\u201d": {
+  "value": {
     "https://quotes.toscrape.com/": [
-      160
+      160,
+      168
     ]
   },
   "adulthood": {
     "https://quotes.toscrape.com/": [
       166
-    ]
-  },
-  "value": {
-    "https://quotes.toscrape.com/": [
-      168
     ]
   },
   "hated": {
@@ -3512,6 +3715,7 @@
       234,
       257,
       376,
+      386,
       418
     ],
     "https://quotes.toscrape.com/tag/life/page/1/": [
@@ -3527,6 +3731,7 @@
       238,
       356,
       358,
+      373,
       392,
       430,
       434,
@@ -3534,12 +3739,23 @@
       456
     ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
+      81,
       109,
       119,
       167,
       181,
       190,
+      275,
       297
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      44,
+      63,
+      76,
+      120,
+      155,
+      229,
+      235
     ]
   },
   "loved": {
@@ -3548,14 +3764,6 @@
     ],
     "https://quotes.toscrape.com/tag/life/page/1/": [
       59
-    ]
-  },
-  "not\u201d": {
-    "https://quotes.toscrape.com/": [
-      187
-    ],
-    "https://quotes.toscrape.com/tag/life/page/1/": [
-      64
     ]
   },
   "andr\u00e9": {
@@ -3577,7 +3785,7 @@
   "love": {
     "https://quotes.toscrape.com/": [
       194,
-      264
+      263
     ],
     "https://quotes.toscrape.com/tag/change/page/1/": [
       43
@@ -3601,12 +3809,12 @@
       298,
       303,
       347,
-      473
+      472
     ],
     "https://quotes.toscrape.com/tag/life/page/1/": [
       71,
       279,
-      487
+      486
     ],
     "https://quotes.toscrape.com/tag/live/page/1/": [
       49
@@ -3621,25 +3829,55 @@
       41
     ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
-      319
+      318
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       58
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      123,
+      146,
+      275
     ]
   },
-  "\u201ci": {
+  "i": {
     "https://quotes.toscrape.com/": [
       195
     ],
+    "https://quotes.toscrape.com/author/Albert-Einstein": [
+      94
+    ],
+    "https://quotes.toscrape.com/author/J-K-Rowling": [
+      122,
+      358,
+      389,
+      394,
+      506,
+      510,
+      589
+    ],
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
-      69
+      69,
+      183
     ],
     "https://quotes.toscrape.com/tag/life/page/1/": [
-      281
+      164,
+      281,
+      287,
+      292,
+      294,
+      299
     ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
       61,
-      226
+      226,
+      249,
+      256,
+      261
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      246,
+      258
     ]
   },
   "failed": {
@@ -3696,12 +3934,15 @@
       79
     ]
   },
-  "work\u201d": {
+  "work": {
     "https://quotes.toscrape.com/": [
       206
     ],
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
       80
+    ],
+    "https://quotes.toscrape.com/author/Jane-Austen": [
+      263
     ]
   },
   "thomas": {
@@ -3738,12 +3979,6 @@
       90
     ]
   },
-  "\u201ca": {
-    "https://quotes.toscrape.com/": [
-      217,
-      242
-    ]
-  },
   "woman": {
     "https://quotes.toscrape.com/": [
       218
@@ -3770,6 +4005,10 @@
     "https://quotes.toscrape.com/tag/books/page/1/": [
       192,
       234
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      43,
+      157
     ]
   },
   "tea": {
@@ -3806,12 +4045,18 @@
     ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
       83
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      167
     ]
   },
   "know": {
     "https://quotes.toscrape.com/": [
       226,
       249
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      45
     ]
   },
   "how": {
@@ -3853,7 +4098,7 @@
       234
     ]
   },
-  "water\u201d": {
+  "water": {
     "https://quotes.toscrape.com/": [
       235
     ]
@@ -3883,16 +4128,25 @@
     "https://quotes.toscrape.com/tag/life/page/1/": [
       424,
       455
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      39
     ]
   },
   "sunshine": {
     "https://quotes.toscrape.com/": [
       245
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      41
     ]
   },
-  "night\u201d": {
+  "night": {
     "https://quotes.toscrape.com/": [
       250
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      46
     ]
   },
   "steve": {
@@ -3901,6 +4155,9 @@
     ],
     "https://quotes.toscrape.com/author/J-K-Rowling": [
       598
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      48
     ]
   },
   "martin": {
@@ -3909,17 +4166,23 @@
     ],
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
       423
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      49
     ]
   },
   "obvious": {
     "https://quotes.toscrape.com/": [
       257
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      53
     ]
   },
   "simile": {
     "https://quotes.toscrape.com/": [
       258,
-      273
+      272
     ],
     "https://quotes.toscrape.com/tag/change/page/1/": [
       52
@@ -3940,11 +4203,11 @@
       45
     ],
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
-      482
+      481
     ],
     "https://quotes.toscrape.com/tag/life/page/1/": [
       402,
-      496
+      495
     ],
     "https://quotes.toscrape.com/tag/live/page/1/": [
       58
@@ -3959,10 +4222,14 @@
       50
     ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
-      328
+      327
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       67
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      54,
+      284
     ]
   },
   "next": {
@@ -3978,25 +4245,14 @@
     ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
       314
-    ]
-  },
-  "\u2192": {
-    "https://quotes.toscrape.com/": [
-      260
     ],
-    "https://quotes.toscrape.com/tag/inspirational/page/1/": [
-      469
-    ],
-    "https://quotes.toscrape.com/tag/life/page/1/": [
-      483
-    ],
-    "https://quotes.toscrape.com/tag/books/page/1/": [
-      315
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      271
     ]
   },
   "top": {
     "https://quotes.toscrape.com/": [
-      261
+      260
     ],
     "https://quotes.toscrape.com/tag/change/page/1/": [
       40
@@ -4017,10 +4273,10 @@
       33
     ],
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
-      470
+      469
     ],
     "https://quotes.toscrape.com/tag/life/page/1/": [
-      484
+      483
     ],
     "https://quotes.toscrape.com/tag/live/page/1/": [
       46
@@ -4035,15 +4291,18 @@
       38
     ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
-      316
+      315
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       55
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      272
     ]
   },
   "ten": {
     "https://quotes.toscrape.com/": [
-      262
+      261
     ],
     "https://quotes.toscrape.com/tag/change/page/1/": [
       41
@@ -4064,10 +4323,10 @@
       34
     ],
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
-      471
+      470
     ],
     "https://quotes.toscrape.com/tag/life/page/1/": [
-      485
+      484
     ],
     "https://quotes.toscrape.com/tag/live/page/1/": [
       47
@@ -4082,15 +4341,18 @@
       39
     ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
-      317
+      316
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       56
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      273
     ]
   },
   "reading": {
     "https://quotes.toscrape.com/": [
-      269
+      268
     ],
     "https://quotes.toscrape.com/tag/change/page/1/": [
       48
@@ -4112,10 +4374,10 @@
     ],
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
       411,
-      478
+      477
     ],
     "https://quotes.toscrape.com/tag/life/page/1/": [
-      492
+      491
     ],
     "https://quotes.toscrape.com/tag/live/page/1/": [
       54
@@ -4140,16 +4402,19 @@
       225,
       235,
       274,
-      324
+      323
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       54,
       63
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      280
     ]
   },
   "friendship": {
     "https://quotes.toscrape.com/": [
-      270
+      269
     ],
     "https://quotes.toscrape.com/tag/change/page/1/": [
       49
@@ -4170,11 +4435,11 @@
       42
     ],
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
-      479
+      478
     ],
     "https://quotes.toscrape.com/tag/life/page/1/": [
       331,
-      493
+      492
     ],
     "https://quotes.toscrape.com/tag/live/page/1/": [
       55
@@ -4190,15 +4455,18 @@
     ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
       59,
-      325
+      324
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       64
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      281
     ]
   },
   "friends": {
     "https://quotes.toscrape.com/": [
-      271
+      270
     ],
     "https://quotes.toscrape.com/tag/change/page/1/": [
       50
@@ -4226,7 +4494,7 @@
       156,
       168,
       294,
-      480
+      479
     ],
     "https://quotes.toscrape.com/tag/life/page/1/": [
       112,
@@ -4235,7 +4503,7 @@
       275,
       311,
       330,
-      494
+      493
     ],
     "https://quotes.toscrape.com/tag/live/page/1/": [
       56
@@ -4253,15 +4521,18 @@
       39,
       58,
       150,
-      326
+      325
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       65
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      282
     ]
   },
   "truth": {
     "https://quotes.toscrape.com/": [
-      272
+      271
     ],
     "https://quotes.toscrape.com/tag/change/page/1/": [
       51
@@ -4283,11 +4554,11 @@
     ],
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
       110,
-      481
+      480
     ],
     "https://quotes.toscrape.com/tag/life/page/1/": [
       91,
-      495
+      494
     ],
     "https://quotes.toscrape.com/tag/live/page/1/": [
       57
@@ -4302,15 +4573,19 @@
       49
     ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
-      327
+      326
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       66
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      270,
+      283
     ]
   },
   "goodreadscom": {
     "https://quotes.toscrape.com/": [
-      276
+      275
     ],
     "https://quotes.toscrape.com/login": [
       11
@@ -4340,10 +4615,10 @@
       48
     ],
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
-      485
+      484
     ],
     "https://quotes.toscrape.com/tag/life/page/1/": [
-      499
+      498
     ],
     "https://quotes.toscrape.com/tag/live/page/1/": [
       61
@@ -4361,15 +4636,18 @@
       53
     ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
-      331
+      330
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       70
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      287
     ]
   },
   "made": {
     "https://quotes.toscrape.com/": [
-      277
+      276
     ],
     "https://quotes.toscrape.com/login": [
       12
@@ -4401,10 +4679,10 @@
       49
     ],
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
-      486
+      485
     ],
     "https://quotes.toscrape.com/tag/life/page/1/": [
-      500
+      499
     ],
     "https://quotes.toscrape.com/tag/live/page/1/": [
       62
@@ -4422,15 +4700,18 @@
       54
     ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
-      332
+      331
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       71
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      288
     ]
   },
   "with": {
     "https://quotes.toscrape.com/": [
-      278
+      277
     ],
     "https://quotes.toscrape.com/login": [
       13
@@ -4471,14 +4752,14 @@
     ],
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
       148,
-      487
+      486
     ],
     "https://quotes.toscrape.com/tag/life/page/1/": [
       129,
       428,
       462,
       470,
-      501
+      500
     ],
     "https://quotes.toscrape.com/tag/live/page/1/": [
       63
@@ -4498,42 +4779,46 @@
       55
     ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
-      333
+      332
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       72
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      185,
+      289
     ]
   },
-  "\u2764": {
+  "zyte": {
     "https://quotes.toscrape.com/": [
       279
     ],
     "https://quotes.toscrape.com/login": [
-      14
+      15
     ],
     "https://quotes.toscrape.com/author/Albert-Einstein": [
-      622
+      623
     ],
     "https://quotes.toscrape.com/tag/change/page/1/": [
-      58
+      59
     ],
     "https://quotes.toscrape.com/tag/deep-thoughts/page/1/": [
-      58
+      59
     ],
     "https://quotes.toscrape.com/tag/thinking/page/1/": [
-      90
+      91
     ],
     "https://quotes.toscrape.com/tag/world/page/1/": [
-      58
+      59
     ],
     "https://quotes.toscrape.com/author/J-K-Rowling": [
-      656
+      657
     ],
     "https://quotes.toscrape.com/tag/abilities/page/1/": [
-      51
+      52
     ],
     "https://quotes.toscrape.com/tag/choices/page/1/": [
-      51
+      52
     ],
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
       488
@@ -4542,84 +4827,28 @@
       502
     ],
     "https://quotes.toscrape.com/tag/live/page/1/": [
-      64
+      65
     ],
     "https://quotes.toscrape.com/tag/miracle/page/1/": [
-      64
+      65
     ],
     "https://quotes.toscrape.com/tag/miracles/page/1/": [
-      64
+      65
     ],
     "https://quotes.toscrape.com/author/Jane-Austen": [
-      339
+      340
     ],
     "https://quotes.toscrape.com/tag/aliteracy/page/1/": [
-      56
+      57
     ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
       334
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
-      73
-    ]
-  },
-  "zyte": {
-    "https://quotes.toscrape.com/": [
-      281
+      74
     ],
-    "https://quotes.toscrape.com/login": [
-      16
-    ],
-    "https://quotes.toscrape.com/author/Albert-Einstein": [
-      624
-    ],
-    "https://quotes.toscrape.com/tag/change/page/1/": [
-      60
-    ],
-    "https://quotes.toscrape.com/tag/deep-thoughts/page/1/": [
-      60
-    ],
-    "https://quotes.toscrape.com/tag/thinking/page/1/": [
-      92
-    ],
-    "https://quotes.toscrape.com/tag/world/page/1/": [
-      60
-    ],
-    "https://quotes.toscrape.com/author/J-K-Rowling": [
-      658
-    ],
-    "https://quotes.toscrape.com/tag/abilities/page/1/": [
-      53
-    ],
-    "https://quotes.toscrape.com/tag/choices/page/1/": [
-      53
-    ],
-    "https://quotes.toscrape.com/tag/inspirational/page/1/": [
-      490
-    ],
-    "https://quotes.toscrape.com/tag/life/page/1/": [
-      504
-    ],
-    "https://quotes.toscrape.com/tag/live/page/1/": [
-      66
-    ],
-    "https://quotes.toscrape.com/tag/miracle/page/1/": [
-      66
-    ],
-    "https://quotes.toscrape.com/tag/miracles/page/1/": [
-      66
-    ],
-    "https://quotes.toscrape.com/author/Jane-Austen": [
-      341
-    ],
-    "https://quotes.toscrape.com/tag/aliteracy/page/1/": [
-      58
-    ],
-    "https://quotes.toscrape.com/tag/books/page/1/": [
-      336
-    ],
-    "https://quotes.toscrape.com/tag/classic/page/1/": [
-      75
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      291
     ]
   },
   "username": {
@@ -4929,6 +5158,9 @@
     ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
       186
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      197
     ]
   },
   "special": {
@@ -4970,6 +5202,9 @@
     ],
     "https://quotes.toscrape.com/tag/life/page/1/": [
       143
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      67
     ]
   },
   "published": {
@@ -5038,6 +5273,9 @@
       84,
       534
     ],
+    "https://quotes.toscrape.com/tag/inspirational/page/1/": [
+      461
+    ],
     "https://quotes.toscrape.com/tag/life/page/1/": [
       338
     ]
@@ -5074,35 +5312,6 @@
     "https://quotes.toscrape.com/author/Albert-Einstein": [
       93,
       505
-    ]
-  },
-  "i": {
-    "https://quotes.toscrape.com/author/Albert-Einstein": [
-      94
-    ],
-    "https://quotes.toscrape.com/author/J-K-Rowling": [
-      122,
-      358,
-      389,
-      394,
-      506,
-      510,
-      589
-    ],
-    "https://quotes.toscrape.com/tag/inspirational/page/1/": [
-      183
-    ],
-    "https://quotes.toscrape.com/tag/life/page/1/": [
-      164,
-      287,
-      292,
-      294,
-      299
-    ],
-    "https://quotes.toscrape.com/tag/books/page/1/": [
-      249,
-      256,
-      261
     ]
   },
   "stayed": {
@@ -5266,6 +5475,9 @@
       218,
       229,
       307
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      85
     ]
   },
   "stature": {
@@ -5285,6 +5497,9 @@
     "https://quotes.toscrape.com/tag/life/page/1/": [
       187,
       192
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      104
     ]
   },
   "up": {
@@ -5309,6 +5524,9 @@
     ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
       185
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      232
     ]
   },
   "doctrine": {
@@ -5399,6 +5617,9 @@
     "https://quotes.toscrape.com/author/J-K-Rowling": [
       126,
       229
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      174
     ]
   },
   "will": {
@@ -5419,6 +5640,9 @@
     "https://quotes.toscrape.com/tag/books/page/1/": [
       67,
       290
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      195
     ]
   },
   "avail": {
@@ -5492,7 +5716,11 @@
       392,
       538
     ],
+    "https://quotes.toscrape.com/tag/inspirational/page/1/": [
+      91
+    ],
     "https://quotes.toscrape.com/tag/life/page/1/": [
+      72,
       318
     ],
     "https://quotes.toscrape.com/author/Jane-Austen": [
@@ -5545,6 +5773,9 @@
     "https://quotes.toscrape.com/author/Jane-Austen": [
       215,
       278
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      124
     ]
   },
   "an": {
@@ -5562,6 +5793,9 @@
     ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
       264
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      187
     ]
   },
   "incomparably": {
@@ -5595,6 +5829,9 @@
     ],
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
       349
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      243
     ]
   },
   "conference": {
@@ -5709,8 +5946,15 @@
       582,
       587
     ],
+    "https://quotes.toscrape.com/tag/inspirational/page/1/": [
+      403
+    ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
+      98,
       155
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      153
     ]
   },
   "expression": {
@@ -5851,6 +6095,11 @@
     "https://quotes.toscrape.com/tag/books/page/1/": [
       82,
       120
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      61,
+      74,
+      230
     ]
   },
   "guardian": {
@@ -5913,6 +6162,9 @@
     ],
     "https://quotes.toscrape.com/tag/life/page/1/": [
       282
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      96
     ]
   },
   "13": {
@@ -5957,7 +6209,7 @@
       319
     ]
   },
-  "mass\u2013energy": {
+  "massenergy": {
     "https://quotes.toscrape.com/author/Albert-Einstein": [
       322
     ]
@@ -5990,6 +6242,7 @@
       327
     ],
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
+      379,
       458
     ]
   },
@@ -6352,6 +6605,9 @@
       588,
       604
     ],
+    "https://quotes.toscrape.com/tag/inspirational/page/1/": [
+      431
+    ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
       161,
       248
@@ -6396,6 +6652,9 @@
       140,
       160,
       290
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      168
     ]
   },
   "back": {
@@ -6591,7 +6850,7 @@
       574
     ]
   },
-  "russell\u2013einstein": {
+  "russelleinstein": {
     "https://quotes.toscrape.com/author/Albert-Einstein": [
       576
     ]
@@ -6695,7 +6954,7 @@
       615
     ]
   },
-  "httpenwikipediaorgwikialbertehttpwwwnobelprizeorgnobelprize": {
+  "httpenwikipediaorgwikialbert_ehttpwwwnobelprizeorgnobel_prize": {
     "https://quotes.toscrape.com/author/Albert-Einstein": [
       616
     ]
@@ -6742,6 +7001,9 @@
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       7
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      7
     ]
   },
   "tag": {
@@ -6786,21 +7048,33 @@
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       8
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      8
     ]
   },
   "trouble": {
     "https://quotes.toscrape.com/tag/thinking/page/1/": [
       41
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      184
     ]
   },
   "having": {
     "https://quotes.toscrape.com/tag/thinking/page/1/": [
       43
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      186
     ]
   },
   "open": {
     "https://quotes.toscrape.com/tag/thinking/page/1/": [
       45
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      188
     ]
   },
   "mind": {
@@ -6809,11 +7083,17 @@
     ],
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
       353
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      189
     ]
   },
   "course": {
     "https://quotes.toscrape.com/tag/thinking/page/1/": [
       48
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      191
     ]
   },
   "people": {
@@ -6828,21 +7108,34 @@
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       42
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      166,
+      194
     ]
   },
   "insist": {
     "https://quotes.toscrape.com/tag/thinking/page/1/": [
       53
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      196
     ]
   },
   "coming": {
     "https://quotes.toscrape.com/tag/thinking/page/1/": [
       55
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      198
     ]
   },
   "along": {
     "https://quotes.toscrape.com/tag/thinking/page/1/": [
       56
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      199
     ]
   },
   "trying": {
@@ -6854,36 +7147,49 @@
     ],
     "https://quotes.toscrape.com/tag/life/page/1/": [
       226
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      201
     ]
   },
   "put": {
     "https://quotes.toscrape.com/tag/thinking/page/1/": [
       60
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      203
     ]
   },
   "things": {
     "https://quotes.toscrape.com/tag/thinking/page/1/": [
       61
-    ]
-  },
-  "it\u201d": {
-    "https://quotes.toscrape.com/tag/thinking/page/1/": [
-      63
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      204
     ]
   },
   "terry": {
     "https://quotes.toscrape.com/tag/thinking/page/1/": [
       65
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      208
     ]
   },
   "pratchett": {
     "https://quotes.toscrape.com/tag/thinking/page/1/": [
       66
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      209
     ]
   },
   "openmind": {
     "https://quotes.toscrape.com/tag/thinking/page/1/": [
       70
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      213
     ]
   },
   "july": {
@@ -7093,6 +7399,7 @@
     ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
       93,
+      143,
       159,
       211,
       247,
@@ -7166,7 +7473,11 @@
       47
     ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
-      111
+      111,
+      217
+    ],
+    "https://quotes.toscrape.com/tag/classic/page/1/": [
+      46
     ]
   },
   "written": {
@@ -7250,6 +7561,9 @@
     "https://quotes.toscrape.com/author/Jane-Austen": [
       122,
       163
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      99
     ]
   },
   "paternal": {
@@ -7324,6 +7638,9 @@
     "https://quotes.toscrape.com/author/J-K-Rowling": [
       127,
       621
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      143
     ]
   },
   "angry": {
@@ -7881,6 +8198,9 @@
     ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
       296
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      130
     ]
   },
   "recalls": {
@@ -7899,6 +8219,9 @@
     "https://quotes.toscrape.com/tag/life/page/1/": [
       120,
       144
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      142
     ]
   },
   "telling": {
@@ -8018,6 +8341,9 @@
   "church": {
     "https://quotes.toscrape.com/author/J-K-Rowling": [
       430
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      60
     ]
   },
   "cottage": {
@@ -8172,6 +8498,10 @@
     "https://quotes.toscrape.com/tag/books/page/1/": [
       163,
       229
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      119,
+      149
     ]
   },
   "booksrowling": {
@@ -8201,7 +8531,7 @@
       505
     ]
   },
-  "wasn\u2019t": {
+  "wasnt": {
     "https://quotes.toscrape.com/author/J-K-Rowling": [
       507
     ]
@@ -8226,11 +8556,14 @@
     ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
       122
-    ]
-  },
-  "it\u2019s": {
-    "https://quotes.toscrape.com/author/J-K-Rowling": [
-      512
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      68,
+      215,
+      218,
+      221,
+      224,
+      231
     ]
   },
   "dreadful": {
@@ -8241,6 +8574,10 @@
   "time": {
     "https://quotes.toscrape.com/author/J-K-Rowling": [
       515
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      100,
+      102
     ]
   },
   "homelife": {
@@ -8368,6 +8705,9 @@
   "im": {
     "https://quotes.toscrape.com/author/J-K-Rowling": [
       593
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      252
     ]
   },
   "proud": {
@@ -8487,14 +8827,6 @@
       645
     ]
   },
-  "\u201cthis": {
-    "https://quotes.toscrape.com/tag/inspirational/page/1/": [
-      91
-    ],
-    "https://quotes.toscrape.com/tag/life/page/1/": [
-      72
-    ]
-  },
   "make": {
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
       96,
@@ -8503,6 +8835,10 @@
     "https://quotes.toscrape.com/tag/life/page/1/": [
       77,
       146
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      62,
+      75
     ]
   },
   "youre": {
@@ -8617,6 +8953,9 @@
       121,
       123,
       436
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      165
     ]
   },
   "come": {
@@ -8827,6 +9166,9 @@
       214,
       236,
       258
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      251
     ]
   },
   "if": {
@@ -8839,8 +9181,12 @@
       237
     ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
+      108,
       260,
       287
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      233
     ]
   },
   "youll": {
@@ -8926,6 +9272,9 @@
     ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
       195
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      131
     ]
   },
   "mean": {
@@ -8999,6 +9348,7 @@
       235,
       381,
       407,
+      412,
       421
     ]
   },
@@ -9019,6 +9369,9 @@
     "https://quotes.toscrape.com/tag/life/page/1/": [
       244,
       265
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      147
     ]
   },
   "head": {
@@ -9036,6 +9389,9 @@
     "https://quotes.toscrape.com/tag/life/page/1/": [
       248,
       464
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      225
     ]
   },
   "chin": {
@@ -9097,14 +9453,6 @@
       268
     ]
   },
-  "about\u201d": {
-    "https://quotes.toscrape.com/tag/inspirational/page/1/": [
-      288
-    ],
-    "https://quotes.toscrape.com/tag/life/page/1/": [
-      269
-    ]
-  },
   "heartbreak": {
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
       295
@@ -9127,6 +9475,7 @@
       308,
       317,
       326,
+      336,
       345
     ]
   },
@@ -9150,11 +9499,6 @@
       324
     ]
   },
-  "indifference\u201d": {
-    "https://quotes.toscrape.com/tag/inspirational/page/1/": [
-      336
-    ]
-  },
   "elie": {
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
       338
@@ -9175,17 +9519,12 @@
       343
     ]
   },
-  "\u201cto": {
-    "https://quotes.toscrape.com/tag/inspirational/page/1/": [
-      350
-    ]
-  },
   "wellorganized": {
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
       352
     ]
   },
-  "adventure\u201d": {
+  "adventure": {
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
       360
     ]
@@ -9195,31 +9534,20 @@
       372
     ]
   },
-  "been\u201d": {
-    "https://quotes.toscrape.com/tag/inspirational/page/1/": [
-      379
-    ]
-  },
   "george": {
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
       381
     ],
     "https://quotes.toscrape.com/tag/life/page/1/": [
       414
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      261
     ]
   },
   "eliot": {
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
       382
-    ]
-  },
-  "\u201cyou": {
-    "https://quotes.toscrape.com/tag/inspirational/page/1/": [
-      386
-    ],
-    "https://quotes.toscrape.com/tag/books/page/1/": [
-      81,
-      275
     ]
   },
   "cup": {
@@ -9255,14 +9583,6 @@
       97
     ]
   },
-  "me\u201d": {
-    "https://quotes.toscrape.com/tag/inspirational/page/1/": [
-      403
-    ],
-    "https://quotes.toscrape.com/tag/books/page/1/": [
-      98
-    ]
-  },
   "cs": {
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
       405
@@ -9279,17 +9599,12 @@
       101
     ]
   },
-  "\u201conly": {
-    "https://quotes.toscrape.com/tag/inspirational/page/1/": [
-      413
-    ]
-  },
   "darkness": {
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
       416
     ]
   },
-  "stars\u201d": {
+  "stars": {
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
       421
     ]
@@ -9307,11 +9622,6 @@
   "jr": {
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
       426
-    ]
-  },
-  "\u201cwhen": {
-    "https://quotes.toscrape.com/tag/inspirational/page/1/": [
-      431
     ]
   },
   "door": {
@@ -9360,11 +9670,6 @@
       459
     ]
   },
-  "us\u201d": {
-    "https://quotes.toscrape.com/tag/inspirational/page/1/": [
-      461
-    ]
-  },
   "helen": {
     "https://quotes.toscrape.com/tag/inspirational/page/1/": [
       463
@@ -9395,11 +9700,6 @@
       300
     ]
   },
-  "be\u201d": {
-    "https://quotes.toscrape.com/tag/life/page/1/": [
-      302
-    ]
-  },
   "douglas": {
     "https://quotes.toscrape.com/tag/life/page/1/": [
       304
@@ -9413,14 +9713,6 @@
   "navigation": {
     "https://quotes.toscrape.com/tag/life/page/1/": [
       309
-    ]
-  },
-  "\u201cgood": {
-    "https://quotes.toscrape.com/tag/life/page/1/": [
-      310
-    ],
-    "https://quotes.toscrape.com/tag/books/page/1/": [
-      38
     ]
   },
   "sleepy": {
@@ -9445,14 +9737,6 @@
     ],
     "https://quotes.toscrape.com/tag/books/page/1/": [
       49
-    ]
-  },
-  "life\u201d": {
-    "https://quotes.toscrape.com/tag/life/page/1/": [
-      322
-    ],
-    "https://quotes.toscrape.com/tag/books/page/1/": [
-      50
     ]
   },
   "mark": {
@@ -9487,13 +9771,6 @@
       57
     ]
   },
-  "\u201clife": {
-    "https://quotes.toscrape.com/tag/life/page/1/": [
-      333,
-      382,
-      403
-    ]
-  },
   "happens": {
     "https://quotes.toscrape.com/tag/life/page/1/": [
       336
@@ -9509,9 +9786,10 @@
       342
     ]
   },
-  "plans\u201d": {
+  "plans": {
     "https://quotes.toscrape.com/tag/life/page/1/": [
-      344
+      344,
+      354
     ]
   },
   "allen": {
@@ -9539,12 +9817,7 @@
       353
     ]
   },
-  "plans": {
-    "https://quotes.toscrape.com/tag/life/page/1/": [
-      354
-    ]
-  },
-  "\u201ctoday": {
+  "today": {
     "https://quotes.toscrape.com/tag/life/page/1/": [
       355
     ]
@@ -9552,14 +9825,6 @@
   "truer": {
     "https://quotes.toscrape.com/tag/life/page/1/": [
       361
-    ]
-  },
-  "there": {
-    "https://quotes.toscrape.com/tag/life/page/1/": [
-      364
-    ],
-    "https://quotes.toscrape.com/tag/books/page/1/": [
-      230
     ]
   },
   "alive": {
@@ -9572,19 +9837,20 @@
       371
     ]
   },
-  "you\u201d": {
-    "https://quotes.toscrape.com/tag/life/page/1/": [
-      373
-    ]
-  },
   "dr": {
     "https://quotes.toscrape.com/tag/life/page/1/": [
       375
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      238
     ]
   },
   "seuss": {
     "https://quotes.toscrape.com/tag/life/page/1/": [
       376
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      239
     ]
   },
   "comedy": {
@@ -9607,7 +9873,7 @@
       391
     ]
   },
-  "moving\u201d": {
+  "moving": {
     "https://quotes.toscrape.com/tag/life/page/1/": [
       395
     ]
@@ -9627,11 +9893,6 @@
       411
     ]
   },
-  "yourself\u201d": {
-    "https://quotes.toscrape.com/tag/life/page/1/": [
-      412
-    ]
-  },
   "bernard": {
     "https://quotes.toscrape.com/tag/life/page/1/": [
       415
@@ -9642,7 +9903,7 @@
       416
     ]
   },
-  "\u201cfinish": {
+  "finish": {
     "https://quotes.toscrape.com/tag/life/page/1/": [
       422
     ]
@@ -9719,7 +9980,7 @@
       469
     ]
   },
-  "nonsense\u201d": {
+  "nonsense": {
     "https://quotes.toscrape.com/tag/life/page/1/": [
       473
     ]
@@ -9777,6 +10038,9 @@
   "whose": {
     "https://quotes.toscrape.com/author/Jane-Austen": [
       27
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      256
     ]
   },
   "works": {
@@ -10287,11 +10551,6 @@
       261
     ]
   },
-  "work": {
-    "https://quotes.toscrape.com/author/Jane-Austen": [
-      263
-    ]
-  },
   "brought": {
     "https://quotes.toscrape.com/author/Jane-Austen": [
       264
@@ -10300,6 +10559,9 @@
   "little": {
     "https://quotes.toscrape.com/author/Jane-Austen": [
       266
+    ],
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      126
     ]
   },
   "fame": {
@@ -10422,10 +10684,12 @@
       66
     ]
   },
-  "library\u201d": {
+  "library": {
     "https://quotes.toscrape.com/tag/books/page/1/": [
       72,
-      266
+      80,
+      266,
+      273
     ]
   },
   "jorge": {
@@ -10441,17 +10705,6 @@
   "borges": {
     "https://quotes.toscrape.com/tag/books/page/1/": [
       76
-    ]
-  },
-  "library": {
-    "https://quotes.toscrape.com/tag/books/page/1/": [
-      80,
-      273
-    ]
-  },
-  "\u201cif": {
-    "https://quotes.toscrape.com/tag/books/page/1/": [
-      108
     ]
   },
   "everyone": {
@@ -10481,11 +10734,6 @@
       140
     ]
   },
-  "book\u201d": {
-    "https://quotes.toscrape.com/tag/books/page/1/": [
-      143
-    ]
-  },
   "ernest": {
     "https://quotes.toscrape.com/tag/books/page/1/": [
       145
@@ -10499,11 +10747,6 @@
   "novelistquotes": {
     "https://quotes.toscrape.com/tag/books/page/1/": [
       151
-    ]
-  },
-  "\u201cwhat": {
-    "https://quotes.toscrape.com/tag/books/page/1/": [
-      152
     ]
   },
   "really": {
@@ -10566,11 +10809,6 @@
       196
     ]
   },
-  "though\u201d": {
-    "https://quotes.toscrape.com/tag/books/page/1/": [
-      198
-    ]
-  },
   "jd": {
     "https://quotes.toscrape.com/tag/books/page/1/": [
       200
@@ -10592,28 +10830,12 @@
       313
     ]
   },
-  "\u201c\u2032classic\u2032": {
-    "https://quotes.toscrape.com/tag/books/page/1/": [
-      209
-    ],
-    "https://quotes.toscrape.com/tag/classic/page/1/": [
-      38
-    ]
-  },
   "praise": {
     "https://quotes.toscrape.com/tag/books/page/1/": [
       214
     ],
     "https://quotes.toscrape.com/tag/classic/page/1/": [
       43
-    ]
-  },
-  "read\u201d": {
-    "https://quotes.toscrape.com/tag/books/page/1/": [
-      217
-    ],
-    "https://quotes.toscrape.com/tag/classic/page/1/": [
-      46
     ]
   },
   "declare": {
@@ -10679,9 +10901,10 @@
       310
     ]
   },
-  "children\u201d": {
+  "children": {
     "https://quotes.toscrape.com/tag/books/page/1/": [
-      301
+      301,
+      308
     ]
   },
   "madeleine": {
@@ -10694,9 +10917,251 @@
       304
     ]
   },
-  "children": {
-    "https://quotes.toscrape.com/tag/books/page/1/": [
-      308
+  "anyone": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      55
+    ]
+  },
+  "thinks": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      57,
+      228
+    ]
+  },
+  "sitting": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      58,
+      70
+    ]
+  },
+  "christian": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      65
+    ]
+  },
+  "garage": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      73
+    ]
+  },
+  "car": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      78
+    ]
+  },
+  "garrison": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      80
+    ]
+  },
+  "keillor": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      81
+    ]
+  },
+  "eye": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      90,
+      112
+    ]
+  },
+  "beholder": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      93,
+      109
+    ]
+  },
+  "necessary": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      98
+    ]
+  },
+  "misinformed": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      108
+    ]
+  },
+  "black": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      111
+    ]
+  },
+  "jim": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      114
+    ]
+  },
+  "henson": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      115
+    ]
+  },
+  "need": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      121
+    ]
+  },
+  "chocolate": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      127,
+      139
+    ]
+  },
+  "now": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      128
+    ]
+  },
+  "hurt": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      132
+    ]
+  },
+  "charles": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      134,
+      178
+    ]
+  },
+  "m": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      135
+    ]
+  },
+  "schulz": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      136
+    ]
+  },
+  "food": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      140
+    ]
+  },
+  "madly": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      144
+    ]
+  },
+  "right": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      150,
+      219
+    ]
+  },
+  "kiss": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      152
+    ]
+  },
+  "anytime": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      154
+    ]
+  },
+  "feel": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      156
+    ]
+  },
+  "suzanne": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      160
+    ]
+  },
+  "collins": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      161
+    ]
+  },
+  "crazy": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      169
+    ]
+  },
+  "horrible": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      172
+    ]
+  },
+  "lives": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      173
+    ]
+  },
+  "lead": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      176
+    ]
+  },
+  "bukowski": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      179
+    ]
+  },
+  "left": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      216
+    ]
+  },
+  "low": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      222
+    ]
+  },
+  "oh": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      226
+    ]
+  },
+  "reason": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      245
+    ]
+  },
+  "talk": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      247
+    ]
+  },
+  "myself": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      249
+    ]
+  },
+  "answers": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      257
+    ]
+  },
+  "accept": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      259
+    ]
+  },
+  "carlin": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      262
+    ]
+  },
+  "insanity": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      266
+    ]
+  },
+  "lies": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      267
+    ]
+  },
+  "lying": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      268
+    ]
+  },
+  "selfindulgence": {
+    "https://quotes.toscrape.com/tag/humor/page/1/": [
+      269
     ]
   }
 }
