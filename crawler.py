@@ -17,8 +17,6 @@ def buildIndex():
     visitedUrls = set()
     
     scrapeCounter = 0
-    
-    # while urlQueue: 
     while urlQueue and scrapeCounter < 20:
         scrapeCounter += 1
         pagePath = urlQueue.popleft()
@@ -32,33 +30,24 @@ def buildIndex():
 
         html = fetchPage(fullUrl)
         soup = BeautifulSoup(html, 'html.parser')
-
-        # gets the text from the page space separated
         pageText = soup.get_text()
-        
-        # replaces punctuation and splits it into a list
         words = removePunctuation(pageText)
+        wordFreq = Counter(words)
 
-        # store the url and the positions of the words
-        for pos, word in enumerate(words):
+        for word, freq in wordFreq.items():
             if word not in invertedIndex:
-                invertedIndex[word] = {fullUrl: [pos]}
+                invertedIndex[word] = {fullUrl: freq}
             else:
-                if fullUrl not in invertedIndex[word]:
-                    invertedIndex[word][fullUrl] = [pos]
-                else:
-                    invertedIndex[word][fullUrl].append(pos)
+                invertedIndex[word][fullUrl] = freq
 
 
-        # search and add all other internal refs not in visitedUrls 
         for link in soup.find_all('a'):
             href = link.get('href')
-            if href and href.startswith('/') and href not in visitedUrls:
+            if href and href.startswith('/') and href not in visitedUrls and href not in urlQueue:
                 urlQueue.append(href)
-
+                
         # time.sleep(6)
 
-    # save to JSON file
     with open(indexFile, 'w') as f:
         json.dump(invertedIndex, f, indent=2)
 
@@ -72,52 +61,70 @@ def loadIndex():
 
 def printIndex(word, invertedIndex):
     word = word.lower()
-    
-    # index the invertedIndex with key equal to the word
+
     if word in invertedIndex:
-        print(f"Inverted index for '{word}':")
-        for page, poss in invertedIndex[word].items():
-            # tab character for clarity
-            print(f"\t{page}: {poss}")
+        print(f"Frequency index for '{word}':")
+        for page, freq in invertedIndex[word].items():
+            print(f"\t{page}: {freq}")
     else:
         print(f"No entry found for '{word}'.")
 
-
 def findWords(query, invertedIndex):
     words = query.lower().split()
+    phrase = ' '.join(words)
     pageScores = {}
 
-    # scoring function --> order by match count and settle ties by total frequency = len(positions)
     for word in words:
         if word in invertedIndex:
-            for page, poss in invertedIndex[word].items():
+            for page, freq in invertedIndex[word].items():
                 if page not in pageScores:
                     pageScores[page] = {'matchCount': 0, 'totalFreq': 0}
                 pageScores[page]['matchCount'] += 1
-                pageScores[page]['totalFreq'] += len(poss)
+                pageScores[page]['totalFreq'] += freq
 
-    # sort the pages by match count settling ties by total frequency and turn into dict
+    if not pageScores:
+        print("No pages found containing any of the query words.\n")
+        return
+
     sortedPages = dict(sorted(
-    pageScores.items(),
-    key=lambda item: (item[1]['matchCount'], item[1]['totalFreq']),
-    reverse=True
+        pageScores.items(),
+        key=lambda item: (item[1]['matchCount'], item[1]['totalFreq']),
+        reverse=True
     ))
 
-    if not sortedPages:
-        print("No pages found containing any of the query words.\n")
+    fullMatchPages = [page for page, stats in sortedPages.items() if stats['matchCount'] == len(words)]
+    phraseMatches = checkPhraseMatches(fullMatchPages, phrase)
+
+    if phraseMatches:
+        print(f"Pages containing the exact phrase '{phrase}':")
+        for page in phraseMatches:
+            print(f"\t{page} - Full Phrase Match ")
 
     for page, stats in sortedPages.items():
+        if page in phraseMatches:
+            continue 
         if stats['matchCount'] == len(words):
-            print(f'\t{page} - Full Match')
-        else: print(f'\t{page}')
-        
+            print(f"\t{page} - Contains All Query Terms ")
+        else:
+            print(f"\t{page}")
+
 def removePunctuation(text):
     cleaned = text.lower().translate(str.maketrans('', '', string.punctuation))
     return cleaned.split()
-
 def fetchPage(url):
     response = requests.get(url)
     return response.text
+def checkPhraseMatches(pages, phrase):
+    matchedPages = []
+    for page in pages:
+        html = fetchPage(page)
+        soup = BeautifulSoup(html, 'html.parser')
+        text = soup.get_text()
+        cleaned = removePunctuation(text)
+        if phrase in ' '.join(cleaned):
+            matchedPages.append(page)
+    return matchedPages
+
 
 def main():
     currentIndex = None
@@ -155,7 +162,6 @@ def main():
             findWords(' '.join(parts[1:]), currentIndex)
         else:
             print("Unknown command.")
-
 
 if __name__ == "__main__":
     main()
