@@ -5,136 +5,156 @@ import json
 import time
 import sys
 import os
+import string
 
-BASE_URL = "https://quotes.toscrape.com"
-INDEX_FILE = "../index.json"
+baseUrl = "https://quotes.toscrape.com"
+indexFile = "index.json"
 
 
-def fetch_page(url):
-    response = requests.get(url)
-    return response.text
-
-def build_index():
-    index = {}
-    queue = deque(['/'])
-    visited_urls = set()
+def buildIndex():
+    invertedIndex = {}
+    urlQueue = deque(['/'])
+    visitedUrls = set()
     
-    # scrapeCounter = 0
-    # while queue and scrapeCounter < 20:
-    #   scrapeCounter += 1
-
-    while queue:
-        page_path = queue.popleft()
-        if page_path in visited_urls:
+    scrapeCounter = 0
+    
+    # while urlQueue: 
+    while urlQueue and scrapeCounter < 20:
+        scrapeCounter += 1
+        pagePath = urlQueue.popleft()
+        if pagePath in visitedUrls:
             continue
+        
+        visitedUrls.add(pagePath)
 
-        full_url = BASE_URL + page_path
-        print(f'Crawling: {full_url}')
+        fullUrl = baseUrl + pagePath
+        print(f'Crawling: {fullUrl}')
 
-        html = fetch_page(full_url)
+        html = fetchPage(fullUrl)
         soup = BeautifulSoup(html, 'html.parser')
 
-        page_text = soup.get_text(separator=' ')
-        words = page_text.lower().replace('.', '').replace(',', '').split()
-        word_counts = Counter(words)
+        # gets the text from the page space separated
+        pageText = soup.get_text()
+        
+        # replaces punctuation and splits it into a list
+        words = removePunctuation(pageText)
 
-        for word, count in word_counts.items():
-            if word not in index:
-                index[word] = {full_url: count}
+        # store the url and the positions of the words
+        for pos, word in enumerate(words):
+            if word not in invertedIndex:
+                invertedIndex[word] = {fullUrl: [pos]}
             else:
-                index[word][full_url] = count
+                if fullUrl not in invertedIndex[word]:
+                    invertedIndex[word][fullUrl] = [pos]
+                else:
+                    invertedIndex[word][fullUrl].append(pos)
 
 
-        visited_urls.add(page_path)
-
+        # search and add all other internal refs not in visitedUrls 
         for link in soup.find_all('a'):
             href = link.get('href')
-            if href and href.startswith('/') and href not in visited_urls:
-                queue.append(href)
+            if href and href.startswith('/') and href not in visitedUrls:
+                urlQueue.append(href)
 
         # time.sleep(6)
 
-    with open(INDEX_FILE, 'w') as f:
-        json.dump(index, f, indent=2)
+    # save to JSON file
+    with open(indexFile, 'w') as f:
+        json.dump(invertedIndex, f, indent=2)
 
-
-def load_index():
-    if not os.path.exists(INDEX_FILE):
+def loadIndex():
+    if not os.path.exists(indexFile):
         print("Index file not found. Please run the 'build' command first.")
         return None
 
-    with open(INDEX_FILE, 'r') as f:
+    with open(indexFile, 'r') as f:
         return json.load(f)
 
-
-def print_index(word, index):
+def printIndex(word, invertedIndex):
     word = word.lower()
-    if word in index:
+    
+    # index the invertedIndex with key equal to the word
+    if word in invertedIndex:
         print(f"Inverted index for '{word}':")
-        for page, freq in index[word].items():
-            print(f"  {page}: {freq}")
+        for page, poss in invertedIndex[word].items():
+            # tab character for clarity
+            print(f"\t{page}: {poss}")
     else:
         print(f"No entry found for '{word}'.")
 
 
-def find_words(query, index):
+def findWords(query, invertedIndex):
     words = query.lower().split()
-    page_scores = {}
+    pageScores = {}
 
+    # scoring function --> order by match count and settle ties by total frequency = len(positions)
     for word in words:
-        if word in index:
-            for page, freq in index[word].items():
-                if page not in page_scores:
-                    page_scores[page] = {'match_count': 0, 'total_freq': 0}
-                page_scores[page]['match_count'] += 1
-                page_scores[page]['total_freq'] += freq
+        if word in invertedIndex:
+            for page, poss in invertedIndex[word].items():
+                if page not in pageScores:
+                    pageScores[page] = {'matchCount': 0, 'totalFreq': 0}
+                pageScores[page]['matchCount'] += 1
+                pageScores[page]['totalFreq'] += len(poss)
 
-    sorted_pages = sorted(
-        page_scores.items(),
-        key=lambda item: (item[1]['match_count'], item[1]['total_freq']),
-        reverse=True
-    )
+    # sort the pages by match count settling ties by total frequency and turn into dict
+    sortedPages = dict(sorted(
+    pageScores.items(),
+    key=lambda item: (item[1]['matchCount'], item[1]['totalFreq']),
+    reverse=True
+    ))
 
-    for page, _ in sorted_pages:
-        print(page)
+    if not sortedPages:
+        print("No pages found containing any of the query words.\n")
+
+    for page, stats in sortedPages.items():
+        if stats['matchCount'] == len(words):
+            print(f'\t{page} - Full Match')
+        else: print(f'\t{page}')
+        
+def removePunctuation(text):
+    cleaned = text.lower().translate(str.maketrans('', '', string.punctuation))
+    return cleaned.split()
+
+def fetchPage(url):
+    response = requests.get(url)
+    return response.text
 
 def main():
-    index = None
+    currentIndex = None
 
     while True:
-        user_input = input("Enter command (build, load, print [word], find [phrase], exit): ").strip()
-        if not user_input:
+        userInput = input("Enter command (build, load, print [word], find [phrase], exit): ").strip()
+        if not userInput:
             continue
 
-        parts = user_input.split()
+        parts = userInput.split()
         command = parts[0].lower()
 
         if command == "exit":
             break
         elif command == "build":
-            build_index()
-            index = load_index()
+            buildIndex()
+            currentIndex = loadIndex()
         elif command == "load":
-            index = load_index()
+            currentIndex = loadIndex()
         elif command == "print":
             if len(parts) != 2:
                 print("Usage: print [word]")
                 continue
-            if index is None:
+            if currentIndex is None:
                 print("Please load or build the index first.")
                 continue
-            print_index(parts[1], index)
+            printIndex(parts[1], currentIndex)
         elif command == "find":
             if len(parts) < 2:
                 print("Usage: find [word or phrase]")
                 continue
-            if index is None:
+            if currentIndex is None:
                 print("Please load or build the index first.")
                 continue
-            find_words(' '.join(parts[1:]), index)
+            findWords(' '.join(parts[1:]), currentIndex)
         else:
             print("Unknown command.")
-
 
 
 if __name__ == "__main__":
