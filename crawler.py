@@ -71,8 +71,7 @@ def printIndex(word, invertedIndex):
     if word in invertedIndex:
         print(f"Inverted index for '{word}':")
         for page, poss in invertedIndex[word].items():
-            # print(f"\t{page}: {len(poss)} occurances at positions: {poss}")
-            print(f"\t{page}: {len(poss) }")
+            print(f"\t{page}: {poss}")
     else:
         print(f"No entry found for '{word}'.")
 
@@ -92,23 +91,61 @@ def findWords(query, invertedIndex):
         return
     
     candidatePhraseMatchPages = [page for page, stats in pageScores.items() if stats['matchCount'] == len(words)]
-    exactPages = phraseMatch(query, invertedIndex, candidatePhraseMatchPages) if candidatePhraseMatchPages else []
     
+    subPhrases = computeSubPhrases(query)
+
+    # exact full phrase matches
+    exactPages = set(phraseMatch(query, invertedIndex, candidatePhraseMatchPages))
+
+    # subphrase matches that are not exact
+    subphrasePages = {}
+    for subphrase in subPhrases:
+        matches = phraseMatch(subphrase, invertedIndex, candidatePhraseMatchPages)
+        for p in matches:
+            if p not in exactPages:
+                subphrasePages.setdefault(p, set()).add(subphrase)
+
+    # general word matches exclude pages in above categories
+    generalPages = {
+    p: stats for p, stats in pageScores.items()
+    if p not in exactPages and p not in subphrasePages
+    }
+
+
+    # Output in order:
     print("Results:")
-    for p in exactPages:
+
+    for p in sorted(exactPages, key=lambda p: (pageScores[p]['matchCount'], pageScores[p]['totalFreq']), reverse=True):
         stats = pageScores[p]
-        print(f'\t{p} - Exact Phrase Match (matchCount={stats["matchCount"]}, totalFreq={stats["totalFreq"]})')
+        print(f'\t{p} - Exact phrase match (matchCount={stats["matchCount"]}, totalFreq={stats["totalFreq"]})')
 
-    sortedPages = sorted(
-        pageScores.items(),
-        key=lambda item: (item[1]['matchCount'], item[1]['totalFreq']),
-        reverse=True
-    )
+    for p in sorted(subphrasePages, key=lambda p: (pageScores[p]['matchCount'], pageScores[p]['totalFreq']), reverse=True):
+        stats = pageScores[p]
+        phrases_str = ', '.join(sorted(subphrasePages[p]))
+        print(f'\t{p} - Subphrase match: {phrases_str} (matchCount={stats["matchCount"]}, totalFreq={stats["totalFreq"]})')
 
-    for page, stats in sortedPages:
-        if page not in exactPages:
-            print(f'\t{page} (matchCount={stats["matchCount"]}, totalFreq={stats["totalFreq"]})')
-        
+
+    for p, stats in sorted(generalPages.items(), key=lambda item: (item[1]['matchCount'], item[1]['totalFreq']), reverse=True):
+        print(f'\t{p} - Partial word match (matchCount={stats["matchCount"]}, totalFreq={stats["totalFreq"]})')
+
+def computeSubPhrases(query):
+    words = query.split()
+    n = len(words)
+    subphrases = []
+
+    for length in range(2, n): 
+        for start in range(n - length + 1):
+            subphrase = ' '.join(words[start:start + length])
+            subphrases.append(subphrase)
+
+    return subphrases
+
+def checkSubPhrases(subphrase, invertedIndex, pages):
+    pages = phraseMatch(subphrase, invertedIndex, pages)
+    if not pages:
+        return 0
+    else: return pages
+    
 def phraseMatch(phrase, invertedIndex, candidatePages):
     words = phrase.lower().split()
     exactPages = []
@@ -174,7 +211,6 @@ def main():
             findWords(' '.join(parts[1:]), currentIndex)
         else:
             print("Unknown command.")
-
 
 if __name__ == "__main__":
     main()
