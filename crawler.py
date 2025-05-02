@@ -88,11 +88,12 @@ def findWords(query, invertedIndex):
                 stats['totalFreq'] += len(positions)
 
     if not pageScores:
-        print("No pages found containing any of the query words.\n")
+        print("No pages found containing any of the query words.")
         return
     
     # Identify candidate pages with all words
     candidatePhraseMatchPages = [page for page, stats in pageScores.items() if stats['matchCount'] == len(words)]
+    weakCandidatePhraseMatchPages = [page for page, stats in pageScores.items() if stats['matchCount'] > 1 and stats['matchCount'] < len(words)]
 
     subPhrases = computeSubPhrases(query)
 
@@ -101,7 +102,7 @@ def findWords(query, invertedIndex):
 
     subphrasePages = {}
     for subphrase in subPhrases:
-        matches = phraseMatch(subphrase, invertedIndex, candidatePhraseMatchPages)
+        matches = phraseMatch(subphrase, invertedIndex, weakCandidatePhraseMatchPages)
         for p in matches:
             if p not in exactPages:
                 subphrasePages.setdefault(p, set()).add(subphrase)
