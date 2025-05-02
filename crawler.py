@@ -129,7 +129,7 @@ def findWords(query, invertedIndex):
         phrases_str = ', '.join(sorted(subphrasePages[p]))
         print(f'\t{p} - "{phrases_str}" (matchCount={stats["matchCount"]}, totalFreq={stats["totalFreq"]})')
 
-    if generalPages: print("Other Matches")
+    if generalPages and (exactPages or subphrasePages): print("Other Matches")
     for p, stats in sorted(generalPages.items(), key=lambda item: (item[1]['matchCount'], item[1]['totalFreq']), reverse=True):
         print(f'\t{p} (matchCount={stats["matchCount"]}, totalFreq={stats["totalFreq"]})')
 

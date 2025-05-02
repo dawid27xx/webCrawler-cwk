@@ -1,0 +1,13 @@
+Enter command (build, load, print [word], find [phrase], exit): find going to mess
+Results (214):
+Exact Phrase Matches
+        https://quotes.toscrape.com/page/2/ (matchCount=3, totalFreq=23)
+        https://quotes.toscrape.com/tag/life/page/1/ (matchCount=3, totalFreq=21)
+        https://quotes.toscrape.com/tag/life/ (matchCount=3, totalFreq=21)
+Subphrase Matches
+        https://quotes.toscrape.com/page/7/ - "going to" (matchCount=2, totalFreq=16)
+        https://quotes.toscrape.com/author/Stephenie-Meyer - "going to" (matchCount=2, totalFreq=15)
+        https://quotes.toscrape.com/page/4/ - "going to" (matchCount=2, totalFreq=9)
+Other Matches
+        https://quotes.toscrape.com/author/Madeleine-LEngle (matchCount=3, totalFreq=16)
+        https://quotes.toscrape.com/author/Albert-Einstein (matchCount=1, totalFreq=20)
