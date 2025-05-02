@@ -14,14 +14,10 @@ indexFile = "index.json"
 
 def buildIndex():
     invertedIndex = {}
-    urlQueue = deque(['/'])
+    urlQueue = deque(['/']) # queue for pages to crawl
     visitedUrls = set()
     
-    scrapeCounter = 0
-    
-    # while urlQueue: 
-    while urlQueue and scrapeCounter < 20:
-        scrapeCounter += 1
+    while urlQueue:
         pagePath = urlQueue.popleft()
         if pagePath in visitedUrls:
             continue
@@ -30,12 +26,14 @@ def buildIndex():
 
         fullUrl = baseUrl + pagePath
         print(f'Crawling: {fullUrl}')
-
+        
+        # Get text and tokenise 
         html = fetchPage(fullUrl)
         soup = BeautifulSoup(html, 'html.parser')
         pageText = soup.get_text()
         words = removePunctuation(pageText)
 
+        # Record word positions in the inverted index
         for pos, word in enumerate(words):
             if word not in invertedIndex:
                 invertedIndex[word] = {fullUrl: [pos]}
@@ -45,11 +43,13 @@ def buildIndex():
                 else:
                     invertedIndex[word][fullUrl].append(pos)
 
+        # Queue new links for crawling
         for link in soup.find_all('a'):
             href = link.get('href')
             if href and href.startswith('/') and href not in visitedUrls and href not in urlQueue:
                 urlQueue.append(href)
-        # time.sleep(6)
+        
+        time.sleep(6)
                 
     
     # save to JSON file
@@ -57,6 +57,7 @@ def buildIndex():
         json.dump(invertedIndex, f, indent=2)
 
 def loadIndex():
+    # Load the inverted index from file
     if not os.path.exists(indexFile):
         print("Index file not found. Please run the 'build' command first.")
         return None
@@ -67,7 +68,7 @@ def loadIndex():
 def printIndex(word, invertedIndex):
     word = word.lower()
     
-    # index the invertedIndex with key equal to the word
+    # Print the index entries for a given word
     if word in invertedIndex:
         print(f"Inverted index for '{word}':")
         for page, poss in invertedIndex[word].items():
@@ -79,6 +80,7 @@ def findWords(query, invertedIndex):
     words = query.lower().split()
     pageScores = {}
 
+    # Tally occurrences of each query word by page
     for word in words:
         if word in invertedIndex:
             for page, positions in invertedIndex[word].items():
@@ -90,14 +92,14 @@ def findWords(query, invertedIndex):
         print("No pages found containing any of the query words.\n")
         return
     
+    # Identify candidate pages with all words
     candidatePhraseMatchPages = [page for page, stats in pageScores.items() if stats['matchCount'] == len(words)]
-    
+
     subPhrases = computeSubPhrases(query)
 
-    # exact full phrase matches
+    # Get exact and subphrase matches
     exactPages = set(phraseMatch(query, invertedIndex, candidatePhraseMatchPages))
 
-    # subphrase matches that are not exact
     subphrasePages = {}
     for subphrase in subPhrases:
         matches = phraseMatch(subphrase, invertedIndex, candidatePhraseMatchPages)
@@ -105,30 +107,34 @@ def findWords(query, invertedIndex):
             if p not in exactPages:
                 subphrasePages.setdefault(p, set()).add(subphrase)
 
-    # general word matches exclude pages in above categories
+    # Get remaining pages with only general word matches
     generalPages = {
     p: stats for p, stats in pageScores.items()
     if p not in exactPages and p not in subphrasePages
     }
 
 
-    # Output in order:
-    print("Results:")
+    # Display results by category
+    sumpages = sum([len(exactPages), len(subphrasePages), len(generalPages)])
+    print(f"Results ({sumpages}):")
 
+    if exactPages: print("Exact Phrase Matches")
     for p in sorted(exactPages, key=lambda p: (pageScores[p]['matchCount'], pageScores[p]['totalFreq']), reverse=True):
         stats = pageScores[p]
-        print(f'\t{p} - Exact phrase match (matchCount={stats["matchCount"]}, totalFreq={stats["totalFreq"]})')
+        print(f'\t{p} (matchCount={stats["matchCount"]}, totalFreq={stats["totalFreq"]})')
 
+    if subphrasePages: print("Subphrase Matches")
     for p in sorted(subphrasePages, key=lambda p: (pageScores[p]['matchCount'], pageScores[p]['totalFreq']), reverse=True):
         stats = pageScores[p]
         phrases_str = ', '.join(sorted(subphrasePages[p]))
-        print(f'\t{p} - Subphrase match: {phrases_str} (matchCount={stats["matchCount"]}, totalFreq={stats["totalFreq"]})')
+        print(f'\t{p} - "{phrases_str}" (matchCount={stats["matchCount"]}, totalFreq={stats["totalFreq"]})')
 
-
+    if generalPages: print("Other Matches")
     for p, stats in sorted(generalPages.items(), key=lambda item: (item[1]['matchCount'], item[1]['totalFreq']), reverse=True):
-        print(f'\t{p} - Partial word match (matchCount={stats["matchCount"]}, totalFreq={stats["totalFreq"]})')
+        print(f'\t{p} (matchCount={stats["matchCount"]}, totalFreq={stats["totalFreq"]})')
 
 def computeSubPhrases(query):
+    # Generate all subphrases of 2+ words from the query
     words = query.split()
     n = len(words)
     subphrases = []
@@ -141,17 +147,19 @@ def computeSubPhrases(query):
     return subphrases
 
 def checkSubPhrases(subphrase, invertedIndex, pages):
+    # Run phraseMatch function on subphrase
     pages = phraseMatch(subphrase, invertedIndex, pages)
     if not pages:
         return 0
     else: return pages
     
 def phraseMatch(phrase, invertedIndex, candidatePages):
+    # Check whether subphrases appear in sequence in any candidate page
     words = phrase.lower().split()
     exactPages = []
     
     for page in candidatePages:
-        # Collect positions for each word
+        # Collect positionss for each word
         word_positions = []
         for word in words:
             positions = invertedIndex.get(word, {}).get(page, [])
@@ -166,16 +174,20 @@ def phraseMatch(phrase, invertedIndex, candidatePages):
     return exactPages
 
 def removePunctuation(text):
+    # Remove punctuation and return lowercased words
+    # Source used for the following regex
     # https://www.jeremymorgan.com/python/how-to-remove-punctuation-from-a-string-python/#:~:text=We%20use%20the%20re.,other%20non%2Dpunctuating%20Unicode%20characters.
     text = text.lower()
     text = re.sub(r'[^\w\s]', '', text)
     return text.strip().split()
 
 def fetchPage(url):
+    # Get Page
     response = requests.get(url)
     return response.text
 
 def main():
+    # Command loop: build, load, print, find, or exit
     currentIndex = None
 
     while True:
