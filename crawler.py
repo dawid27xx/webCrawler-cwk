@@ -1,12 +1,11 @@
 from bs4 import BeautifulSoup
-from collections import Counter, deque
+from collections import deque
 import requests
 import json
 import time
 import sys
 import os
 import re
-import string
 
 baseUrl = "https://quotes.toscrape.com"
 indexFile = "index.json"
