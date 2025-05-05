@@ -152,7 +152,6 @@ def findWords(query, invertedIndex):
         print(f'\t{p} - Matched Words: [{matched_words}] (Total occurrences={stats["totalFreq"]})')
 
 
-
 def computeSubPhrases(query):
     # Generate all subphrases of 2+ words from the query
     words = query.split()
